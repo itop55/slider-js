@@ -5,6 +5,10 @@ body {
     height: 3000px;
 }
 
+.mt-50 {
+    margin-top: 50px;
+}
+
 /* стили основного контейнера слайдера */
 .slider {
     position: relative;
@@ -47,6 +51,7 @@ body {
     height: 50px;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
+    outline: none;
 }
 
 .slider__control_show {
@@ -96,11 +101,8 @@ body {
     display: flex;
     justify-content: center;
     padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin: 0 15%;
     list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .slider__indicators li {
@@ -136,3 +138,36 @@ body {
     bottom: 0;
     padding: 10px 15px 40px 15px;
 }
+
+/* Example two */
+.slider-two {
+    padding: 0 40px 30px;
+}
+
+.slider-two .slider__control_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23424242' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider-two .slider__control_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23424242' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider-two .slider__control {
+    opacity: 1;
+    background: none;
+}
+
+.slider__indicators {
+    bottom: 0;
+}
+
+.slider-two .slider__indicators li {
+    background-color: #9e9e9e;
+    opacity: .5;
+}
+
+.slider-two .slider__indicators li.active {
+    background-color: #615f5f;
+    opacity: 1;
+}
+/* Example two */

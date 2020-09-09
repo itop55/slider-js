@@ -148,3 +148,4 @@ var slideShow = (function () {
 }());
 
 slideShow('#slider-1');
+slideShow('#slider-2');
