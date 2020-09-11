@@ -132,6 +132,7 @@
 
 .slider__item:not(.active) > div {
     height: 90%;
+    transition: height 0.3s linear;
 }
 
 .slider__item.active > div {
