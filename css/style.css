@@ -171,3 +171,16 @@ body {
     opacity: 1;
 }
 /* Example two */
+
+.page-two {
+    text-align: center;
+}
+
+.page-two a {
+    padding: 10px 50px;
+    text-decoration: none;
+    background-color: #617d99;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
